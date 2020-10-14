@@ -15,5 +15,5 @@ spec:
         app: nginx
     spec:
       containers:
-      - image: nginx
+      - image: nginxinc/nginx-unprivileged 
         name: nginx
