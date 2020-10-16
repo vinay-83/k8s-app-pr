@@ -11,7 +11,7 @@ pipeline{
    }
    stage('Archive JAR') {
      steps {
-         sh "mvn deploy -DskipTests"
+         sh "mvn deploy -DskipTests=true"
      }
    }
    stage('Build Image') {
